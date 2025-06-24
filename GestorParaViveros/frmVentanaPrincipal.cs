@@ -5,20 +5,11 @@ namespace GestorParaViveros
     public partial class frmVentanaPrincipal : Form
     {
         private static Color ColorFondoBotonesPorDefecto = Color.FromArgb(24, 30, 54);
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn(
-            int nLeftRect,
-            int nTopRect,
-            int nRightRect,
-            int nBottomRect,
-            int nWidthEllipse,
-            int nHeightEllipse
-            );
+        
 
         public frmVentanaPrincipal()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             CambiarDisenioBotonActual(btnInicio);
 
             lblTitulo.Text = "Inicio";

@@ -43,7 +43,6 @@
             pnlNav = new Panel();
             lblTitulo = new Label();
             pnlBarraSuperior = new Panel();
-            btnCerrar = new Button();
             pnlCargadorDeFormularios = new Panel();
             pnlMenu.SuspendLayout();
             pnlUsuarioInfo.SuspendLayout();
@@ -65,7 +64,7 @@
             pnlMenu.Dock = DockStyle.Left;
             pnlMenu.Location = new Point(0, 0);
             pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(186, 577);
+            pnlMenu.Size = new Size(186, 761);
             pnlMenu.TabIndex = 0;
             // 
             // btnConfiguracion
@@ -76,7 +75,7 @@
             btnConfiguracion.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnConfiguracion.ForeColor = Color.FromArgb(0, 126, 249);
             btnConfiguracion.Image = presentacion.Properties.Resources.ajuste_white;
-            btnConfiguracion.Location = new Point(0, 535);
+            btnConfiguracion.Location = new Point(0, 719);
             btnConfiguracion.Name = "btnConfiguracion";
             btnConfiguracion.Size = new Size(186, 42);
             btnConfiguracion.TabIndex = 7;
@@ -258,48 +257,33 @@
             // 
             // pnlBarraSuperior
             // 
-            pnlBarraSuperior.Controls.Add(btnCerrar);
             pnlBarraSuperior.Controls.Add(lblTitulo);
             pnlBarraSuperior.Dock = DockStyle.Top;
             pnlBarraSuperior.Location = new Point(186, 0);
             pnlBarraSuperior.Name = "pnlBarraSuperior";
-            pnlBarraSuperior.Size = new Size(765, 50);
+            pnlBarraSuperior.Size = new Size(1048, 50);
             pnlBarraSuperior.TabIndex = 8;
-            // 
-            // btnCerrar
-            // 
-            btnCerrar.BackColor = Color.Red;
-            btnCerrar.Cursor = Cursors.Hand;
-            btnCerrar.FlatAppearance.BorderSize = 0;
-            btnCerrar.FlatStyle = FlatStyle.Flat;
-            btnCerrar.Image = presentacion.Properties.Resources.cruz_white;
-            btnCerrar.Location = new Point(719, 0);
-            btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(46, 41);
-            btnCerrar.TabIndex = 3;
-            btnCerrar.UseVisualStyleBackColor = false;
-            btnCerrar.Click += btnCerrar_Click;
             // 
             // pnlCargadorDeFormularios
             // 
-            pnlCargadorDeFormularios.Dock = DockStyle.Bottom;
-            pnlCargadorDeFormularios.Location = new Point(186, 100);
+            pnlCargadorDeFormularios.Dock = DockStyle.Fill;
+            pnlCargadorDeFormularios.Location = new Point(186, 50);
             pnlCargadorDeFormularios.Name = "pnlCargadorDeFormularios";
-            pnlCargadorDeFormularios.Size = new Size(765, 477);
+            pnlCargadorDeFormularios.Size = new Size(1048, 711);
             pnlCargadorDeFormularios.TabIndex = 9;
             // 
             // frmVentanaPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(46, 51, 73);
-            ClientSize = new Size(951, 577);
+            ClientSize = new Size(1234, 761);
             Controls.Add(pnlCargadorDeFormularios);
             Controls.Add(pnlBarraSuperior);
             Controls.Add(pnlNav);
             Controls.Add(pnlMenu);
             ForeColor = Color.FromArgb(37, 42, 64);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "frmVentanaPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -332,7 +316,6 @@
         private TextBox textBox1;
         private Button button1;
         private Panel pnlBarraSuperior;
-        private Button btnCerrar;
         private Panel pnlCargadorDeFormularios;
     }
 }

@@ -57,10 +57,11 @@
             // 
             // pnlMensajito
             // 
+            pnlMensajito.Anchor = AnchorStyles.Top;
             pnlMensajito.BackColor = Color.FromArgb(37, 42, 64);
             pnlMensajito.Controls.Add(lblMensajito);
             pnlMensajito.Controls.Add(lblTituloMensajito);
-            pnlMensajito.Location = new Point(309, 373);
+            pnlMensajito.Location = new Point(497, 524);
             pnlMensajito.Name = "pnlMensajito";
             pnlMensajito.Size = new Size(412, 92);
             pnlMensajito.TabIndex = 10;
@@ -89,11 +90,12 @@
             // 
             // pnlHistorial
             // 
+            pnlHistorial.Anchor = AnchorStyles.Top;
             pnlHistorial.BackColor = Color.FromArgb(37, 42, 64);
             pnlHistorial.Controls.Add(lblHistorial);
-            pnlHistorial.Location = new Point(310, 151);
+            pnlHistorial.Location = new Point(497, 262);
             pnlHistorial.Name = "pnlHistorial";
-            pnlHistorial.Size = new Size(412, 211);
+            pnlHistorial.Size = new Size(503, 246);
             pnlHistorial.TabIndex = 11;
             // 
             // lblHistorial
@@ -109,11 +111,12 @@
             // 
             // pnlProgreso
             // 
+            pnlProgreso.Anchor = AnchorStyles.Top;
             pnlProgreso.BackColor = Color.FromArgb(37, 42, 64);
             pnlProgreso.Controls.Add(lblMensajeProgreso);
             pnlProgreso.Controls.Add(cpbProgreso);
             pnlProgreso.Controls.Add(lblProgreso);
-            pnlProgreso.Location = new Point(12, 151);
+            pnlProgreso.Location = new Point(116, 262);
             pnlProgreso.Name = "pnlProgreso";
             pnlProgreso.Size = new Size(258, 314);
             pnlProgreso.TabIndex = 12;
@@ -121,11 +124,11 @@
             // lblMensajeProgreso
             // 
             lblMensajeProgreso.AutoSize = true;
-            lblMensajeProgreso.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMensajeProgreso.Font = new Font("Nirmala UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblMensajeProgreso.ForeColor = Color.FromArgb(159, 151, 176);
-            lblMensajeProgreso.Location = new Point(63, 233);
+            lblMensajeProgreso.Location = new Point(46, 234);
             lblMensajeProgreso.Name = "lblMensajeProgreso";
-            lblMensajeProgreso.Size = new Size(138, 34);
+            lblMensajeProgreso.Size = new Size(155, 40);
             lblMensajeProgreso.TabIndex = 4;
             lblMensajeProgreso.Text = "Para el siguiente mes \r\nse necesitan: $555.343";
             lblMensajeProgreso.TextAlign = ContentAlignment.MiddleCenter;
@@ -174,11 +177,12 @@
             // 
             // pnlDeuda
             // 
+            pnlDeuda.Anchor = AnchorStyles.Top;
             pnlDeuda.BackColor = Color.FromArgb(37, 42, 64);
             pnlDeuda.Controls.Add(pbxDeuda);
             pnlDeuda.Controls.Add(lblMontoDeuda);
             pnlDeuda.Controls.Add(lblDeuda);
-            pnlDeuda.Location = new Point(388, 8);
+            pnlDeuda.Location = new Point(497, 59);
             pnlDeuda.Name = "pnlDeuda";
             pnlDeuda.Size = new Size(334, 130);
             pnlDeuda.TabIndex = 9;
@@ -217,12 +221,13 @@
             // 
             // pnlIngresos
             // 
+            pnlIngresos.Anchor = AnchorStyles.Top;
             pnlIngresos.BackColor = Color.FromArgb(37, 42, 64);
             pnlIngresos.Controls.Add(pbxIngresos);
             pnlIngresos.Controls.Add(lblUltimosIngregos);
             pnlIngresos.Controls.Add(lblMontoIngreso);
             pnlIngresos.Controls.Add(lblIngresos);
-            pnlIngresos.Location = new Point(12, 8);
+            pnlIngresos.Location = new Point(116, 59);
             pnlIngresos.Name = "pnlIngresos";
             pnlIngresos.Size = new Size(326, 130);
             pnlIngresos.TabIndex = 8;
@@ -275,13 +280,14 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 73);
-            ClientSize = new Size(733, 477);
+            ClientSize = new Size(1048, 711);
             Controls.Add(pnlMensajito);
             Controls.Add(pnlHistorial);
             Controls.Add(pnlProgreso);
             Controls.Add(pnlDeuda);
             Controls.Add(pnlIngresos);
             FormBorderStyle = FormBorderStyle.None;
+            MinimumSize = new Size(733, 477);
             Name = "frmInicioResumen";
             Text = "frmInicioResumen";
             pnlMensajito.ResumeLayout(false);
